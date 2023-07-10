@@ -1,0 +1,60 @@
+
+.about-me-container {
+    height: 100vh;
+    max-width: 90%;
+    margin: auto;
+    /* background-color: blueviolet; */
+}
+
+.about-me-main-container {
+  background-color: rgb(59, 55, 55);
+  max-width: 60%;
+  margin: auto;
+  margin-top: 5vh;
+  text-align: justify;
+
+}
+.about-me-text {
+  color: white;
+  
+}
+.about-me-text p {
+  margin: 2vh 2vh 0;
+}
+
+.about-me-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-me-contact a {
+  color: white;
+}
+
+
+@media only screen and (max-width:1012px) {
+  .about-me-main-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width:673px) {
+  .about-me-container img{
+    width: 75%;
+  }
+  .about-me-contact {
+    padding-left: 4vh;
+  }
+  .about-me-text {
+    color: white;
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (max-width:420px) {
+  .about-me-container img{
+    width: 60%;
+  }
+}

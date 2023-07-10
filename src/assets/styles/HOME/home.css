@@ -1,0 +1,121 @@
+.home-container {
+    height: 100vh;
+    max-width: 90%;
+    margin: auto;
+    /* background-color: blueviolet; */
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: brown; */
+
+}
+
+/* home-header */
+
+
+.home-header-logo {
+    padding-top: 3px;
+}
+
+.home-header-navigation {
+    /* background-color: brown; */
+    display: flex;        
+    min-width:40%;
+    justify-content: space-between;
+    margin-top:3vh;
+    flex-wrap: wrap;
+}
+
+.home-header-support {
+    /* background-color: brown; */
+    display: flex;
+    min-width:7%;
+    justify-content:space-evenly;
+
+    margin-top:2vh;
+
+}
+
+.home-header-button {
+    color: red;
+
+}
+
+.home-header-button:hover {
+    color: white;
+}
+
+
+.home-main {
+    margin: 5vh 0 ;
+}
+.home-main-best-films-header {
+    text-align: center;
+    margin-bottom: 2vh;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+}
+.home-main-best-films-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-main-best-films-container-item {
+    width: 20%;
+    margin: 0 1vh;
+}
+
+.home-main-best-films-container-item img {
+    max-width: 100%;
+    
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .home-header-navigation {       
+    min-width:50%;
+}
+
+.home-header-support {       
+    min-width:15%;
+    margin-right: 0vh;
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+    .home-header-navigation {     
+    min-width:60%;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .home-header-logo {
+        padding-top: 4vh;
+    }
+    
+    .home-header-navigation {     
+    min-width:70%;
+    justify-content: space-evenly;
+    gap: 0 9vh ;
+    
+}
+
+.home-header-support {
+    min-width:15%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+}

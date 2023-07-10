@@ -1,0 +1,11 @@
+.buttom_agree {
+    max-width: 75%;
+    font: 22px Roboto;
+}
+
+@media screen and (max-width:492px) { 
+    .buttom_agree {
+        max-width: 75%;
+        font: 16px Roboto;
+    }
+}

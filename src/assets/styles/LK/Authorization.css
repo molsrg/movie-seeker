@@ -1,0 +1,171 @@
+.container {
+    height: 100vh;
+    min-height: 25%;
+    max-width: 30%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    font-family: 'Roboto';
+    letter-spacing: 0.5px;
+}
+
+
+.container-logo {
+    padding-top:15vh;
+    padding-bottom: 6vh;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+    padding-top: 2vh;
+    text-align: left;
+    
+}
+
+input[type="mail"], input[type="password"], input[type="text"] {
+	padding: 13px;
+	border-radius: 7px;
+	border: 2px solid #252525;
+	font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.container-form-checkbox {
+    display: flex;
+    justify-content: right;
+    padding: 0.5vh;
+}
+
+
+.container-form-checkbox a:hover{
+    text-decoration: underline;
+}
+/* .checkbox {
+    прилип чекбокс 
+    
+}*/
+
+
+.container-button-form {
+    padding-top:5vh;
+    padding-bottom: 2vh;
+    text-align: center;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1vh;
+}
+
+.button {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    min-width: 75%;
+    border: 0.5px solid #252525;
+    border-radius: 10rem;
+    padding: 1vh;
+    font: 22px Roboto;
+    color: #5D51A8;
+    background-color: #fff;
+    
+}
+
+.button:hover {
+    transition: 0.5s linear;
+    background: black;
+    color: white;
+}
+
+.container-footer {
+    padding-top:25vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+@media screen and (max-width:1160px) { 
+    body {
+        font: 16px Roboto 
+    }
+    .container-logo {
+        font-size: 24px;
+    }
+    .button {
+        font-size: 18px;
+        min-width: 70%;
+        padding: 1vh;
+    }
+    .container-footer {
+        padding-top: 27.5vh;
+    }
+    
+}
+
+
+@media screen and (max-width:911px) { 
+    body {
+        font: 14px Roboto 
+    }
+    .container-logo {
+        font-size: 22px;
+    }
+    .button {
+        font-size: 16px;
+        min-width: 70%;
+
+    }
+
+    .container-form-checkbox {
+        display: block;
+        text-align: center;
+        }
+
+    .container-footer {
+        padding-top:16vh;
+    }
+
+}
+
+
+@media screen and (max-width:492px) { 
+    body {
+        font: 16px Roboto 
+    }
+    .container {
+        min-width: 80vw;
+    }
+    .container-logo {
+        padding-top:10vh;
+    }   
+    .container-form-checkbox {
+        padding: 0.7vh;
+        padding-bottom: 2vh;
+    }
+    
+    .container-button-form {
+        padding-top:1vh;
+    }
+}
+
+
+/* под мой ноутбук */
+
+
+@media screen and (max-width:1370px) and (max-height:763px) { 
+
+    
+    .container-logo {
+        padding-top:5vh;
+    }
+    .container-footer {
+        padding-top:7vh;
+    }
+    
+    
+}

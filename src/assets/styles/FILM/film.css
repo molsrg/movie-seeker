@@ -1,0 +1,289 @@
+
+
+.film-container {
+    height: 100vh;
+    max-width: 80%;
+    /* background-color: aqua; */
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.film-poster {
+    padding-top: 14vh;
+    /* background-color: brown; */
+    min-width: 31.33%
+}
+
+.film-description {
+    padding-top: 14vh;
+    padding-left: 2vh;
+    /* background-color: white; */
+    min-width: 52%;
+}
+
+.film-raiting {
+    padding-top: 14vh;
+    /* background-color: red; */
+    min-width: 17%;
+    display: flex;
+    flex-direction: column;
+}
+
+.film-container-watch {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 1vh;
+
+    max-width: 60vh;
+}
+
+.film-container-watch img {
+    width: 50px;
+    height: 50px;
+}
+  
+
+
+
+
+
+
+
+/* .film-poster */
+.film-img {
+    width: 100%;
+}
+
+
+/* .film-description */
+
+.film-title {
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+}
+.film-subtitle {
+    margin: 1vh 0;
+    font-size: 20px;
+    color:  grey;
+}
+
+.film-text {
+    max-width: 95%;
+    margin: 1vh 0;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.film-button { 
+    margin: 1vh;
+    background-color: rgb(168,6,5);
+    padding: 10px 30px;
+    color: white;
+    font-size: 20px;
+    line-height: 21px;
+    border-radius: 100px;
+    font-weight: 700;
+    transition: all 200ms ease-in-out;
+}
+
+.film-button:hover {
+    background-color: rgb(149, 5, 5);
+}
+
+
+.film-params {
+    list-style-type: none;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    color: white;
+}
+
+.film-params li {
+    display: flex;
+    margin-bottom: 1.5vh;
+}
+
+/* .video-quality {
+    border: 2px solid grey;
+    border-radius: 1vh;
+    padding: 0 0.5vh;
+} */
+
+.film-params span {
+    min-width: 25vh;
+    color: grey;
+}
+
+.film-about {
+    color: white;
+    font-weight: 400;
+}
+
+
+
+/* .film-raintnig */
+
+.film-raiting-number {
+    color: #44C916;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.film-raiting-grade {
+    color: grey;
+    margin: 1vh 0;
+}
+
+.film-raiting-review {
+    color: white;
+}
+
+@media only screen and (max-width: 1461px){
+    .film-container-watch {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media only screen and (max-width: 1131px){
+    .film-poster {
+        padding-top: 12vh;
+    }
+    .film-description {
+        padding-top: 12vh;
+    }
+    .film-raiting {
+        padding-top: 12vh;
+    }
+
+    .film-params {
+        font-size: 16px;
+    }
+
+    .film-params span {
+        min-width: 25vh;
+
+    }
+}
+
+
+@media only screen and (max-width: 909px){
+    
+    .film-params {
+        font-size: 16px;
+    }
+
+    .film-params span {
+        min-width: 16vh;
+
+    }
+    .film-button {
+
+        background-color: rgb(168,6,5);
+        padding: 10px 30px;
+        color: white;
+        font-size: 2vh;
+        line-height: 21px;
+        border-radius: 100px;
+        font-weight: 700;
+        transition: all 200ms ease-in-out;
+        margin: 0.5vh;
+        padding: 1vh 2vh;
+
+
+
+
+    }
+}
+
+@media only screen and (max-width: 530px){
+    
+    .film-raiting {
+        display: none;
+    }
+}
+
+
+/* под мой ноутбук */
+@media only screen and (max-width: 1367px) and (max-height:769px){
+    .film-poster {
+        padding-top: 12vh;
+    }
+    .film-description {
+        padding-top: 12vh;
+    }
+    .film-raiting {
+        padding-top: 12vh;
+    }
+
+    .film-params span {
+        min-width: 25vh;
+    }
+}
+
+/* под мой телефон */
+@media only screen and (max-width: 376px) and (max-height:812px){
+    .film-poster {
+        padding-top: 1.5vh;
+    }
+    .film-description {
+        padding-top: 1.5vh;
+
+    }
+    
+
+    .film-title {
+        font-size: 26px;
+    }
+    .film-subtitle {
+        font-size: 20px;
+        margin: 0;
+        text-align: justify;
+    }
+    .film-text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .film-button { 
+        margin: 0.5vh;
+        background-color: red;
+        padding: 1vh 1vh;
+        font-size: 2vh;
+        line-height: 14px;
+        font-weight: 700;
+        transition: all 200ms ease-in-out;
+    }
+
+    .film-button:hover {
+        background-color: #540707;
+    }
+
+
+    .film-params {
+        list-style-type: none;
+        color: white;
+        margin-bottom: 5vh;
+    }
+
+    .film-params li {
+        display:grid;
+        margin-bottom: 1.2vh;
+    }
+
+    .film-about {
+        font-size: 3vh;
+    }
+
+    .film-container-watch img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
