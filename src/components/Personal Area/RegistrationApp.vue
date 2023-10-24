@@ -103,15 +103,15 @@ export default {
                 userPassword: this.userPassword
             }
 
-
             if(this.flagRegister) {
-                axios.post('https://movie-seeker-d9219-default-rtdb.firebaseio.com/user.json', Data)
+                axios.post('https://movie-seeker-f790d-default-rtdb.europe-west1.firebasedatabase.app/user.json', Data)
                 .then(() => {
                     window.location.href = "/home"
 
                 })
-                .catch(() => {
-                    alert('Ошибка регистрации пользователя в БД!')
+                .catch((err) => {
+                    console.log(err)
+                    // alert('Ошибка регистрации пользователя в БД!')
                 })   
             }
             

@@ -2,7 +2,7 @@ import axios from 'axios'
 export default {
     state() {
         return {
-           users: {},
+            users: {},
 
         }
         
@@ -19,7 +19,7 @@ export default {
     }, 
     actions: {
         GET_USERS_FROM_FIREBASE({commit}){
-            axios.get('https://movie-seeker-d9219-default-rtdb.firebaseio.com/user.json')
+            axios.get('https://movie-seeker-f790d-default-rtdb.europe-west1.firebasedatabase.app/user.json')
                 .then((res) => {
                     let data = res.data
                     const response = Object.keys(data).map(key => {
