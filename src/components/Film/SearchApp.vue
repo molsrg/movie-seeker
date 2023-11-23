@@ -11,6 +11,7 @@
                 <button
                 class="film-button"
                 @click="searchFilms">Искать</button>
+                <button @click="getData">Получить дата</button>
             </div>
 
             <div class="search-container-main" v-if="SEARCH_FILMS_INFO">
@@ -33,6 +34,7 @@
 
 
 <script>
+import axios from 'axios'
 import HomeHeader from '../Home/HomeHeader.vue'
 import { mapActions, mapGetters } from 'vuex'
 export default {
@@ -43,6 +45,23 @@ export default {
         }
     }, 
     methods: {
+        getData(){
+            axios({
+                method: 'GET', 
+                url: 'https://www.cbr-xml-daily.ru/daily_json.js',
+                headers: {
+                    'accept': 'application/json', 
+                }
+            })
+            .then((response) => {
+                    console.log(response)
+                })
+            .catch((err) => {
+                    console.log(err)
+                })   
+        },
+
+
         ...mapActions(['GET_FILM_BY_TITLE_FROM_API']),
 
         searchFilms(){
